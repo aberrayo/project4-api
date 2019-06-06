@@ -19,10 +19,10 @@ router.get('/movies', (req, res, next) => {
   Movie.find()
     .populate('owner')
     .then(movies => {
-      return movies.map(movie => movie.toObject())
+      return movies.map(movies => movies.toObject())
     })
-  //  .then(movies => {
-    //  return movies.filter(movie => (movie.owner._id).toString() === (req.user._id).toString())
+    // .then(movies => {
+    //  return movies.filter(movie => (movie.owner.id).toString() === (req.user.id).toString())
     // })
     .then(movies => res.status(200).json({ movies: movies }))
     .catch(next)
