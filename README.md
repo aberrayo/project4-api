@@ -59,3 +59,5 @@ https://safe-waters-15946.herokuapp.com
 
 https://github.com/aberrayo/project4-api
 ## Link to  Entity Relationship Diagram DERD
+https://i.imgur.com/TUcOiZX.jpg
+https://imgur.com/JUnpGj7
