@@ -61,3 +61,49 @@ https://github.com/aberrayo/project4-api
 ## Link to  Entity Relationship Diagram DERD
 https://i.imgur.com/TUcOiZX.jpg
 https://imgur.com/JUnpGj7
+## API End Points / routes (paths and methods)
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| DELETE | `/sign-out`            | `users#signout`   |
+| PATCH  | `/change-password`     | `users#changepw`  |
+| GET    | `/movies`               | `movies#index`     |
+| POST   | `/movies`               | `movies#create`    |
+| GET    | `/movies/:id`           | `movies#show`      |
+| PATCH  | `/movies/:id`           | `movies#update`    |
+ ## Installation instructions for any dependencies
+ ### FRONT END:
+
+1. Fork and clone the front-end repository
+
+1. Install dependencies with npm install
+
+1. git add and git commit your changesa pull request for submission
+
+1. Test locally with a development server with npm start
+
+1. The back-end server will also need to be running
+
+### BACK END:
+
+1. Fork and clone the back-end repository
+
+1. Install dependencies with npm install
+
+1. Install nodemon by running npm install -g nodemon
+
+1. Make certain mongo is running:
+
+-- MAC USERS: brew services start mongodb
+
+-- UBUNTU USERS: sudo service mongod start
+
+-- WSL USERS: sudo service mongodb start
+
+1. Ensure the API is functioning properly by running npm run server
+
+1. git add and git commit your changes
+
+1. Open a pull request for submission
